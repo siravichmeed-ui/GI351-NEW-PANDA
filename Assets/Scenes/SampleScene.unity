@@ -526,6 +526,23 @@ MonoBehaviour:
   - {fileID: 1230650535327519774, guid: d2a2a64a5add58b41a4950330fee97a0, type: 3}
   - {fileID: 5894645435569037146, guid: 0d9eec57e062018419a20cfa6785b680, type: 3}
   - {fileID: 987147179511761500, guid: e34a62dd7bdc45d408acebeb139600b7, type: 3}
+  - {fileID: 961896492260209698, guid: 76378044a8d02dd47b252ad15be76be5, type: 3}
+  - {fileID: 7602069047117892806, guid: 81f07ef4f4f9dd84bb47568afaec0c2b, type: 3}
+  - {fileID: 7737394763990414720, guid: 7f1a7f4fa6b1a0640a8371021a19cc43, type: 3}
+  - {fileID: 3144166468422632398, guid: a778bc5de5b10f947b6d4c1ffa967d63, type: 3}
+  - {fileID: 559806272634434538, guid: 56981e58e085c1b4aa58431e9d0543ef, type: 3}
+  - {fileID: 1907233850962266961, guid: 1829152d65cd397448b7284c14f1acca, type: 3}
+  - {fileID: 3190572286368838183, guid: 9ef8f76ed4cc5584e933da020da6e184, type: 3}
+  - {fileID: 8721409089896237277, guid: ad4002fefad5c7544b571d59b571e803, type: 3}
+  - {fileID: 5377627849987911465, guid: c6ebb808fcce3304bb1d922f97a5ac27, type: 3}
+  - {fileID: 7001140655039558169, guid: 7f5cd525238d41146b36d2e74d8a72ad, type: 3}
+  - {fileID: 6301853531405703940, guid: b0970e916855cde439d477bfd21494cf, type: 3}
+  - {fileID: 6660449472720472953, guid: 59fd4839c992520438c3c2dec9e9d607, type: 3}
+  - {fileID: 5262694706961287026, guid: f4510e11efa072743ba8b49012e3f20a, type: 3}
+  - {fileID: 7949009104544600557, guid: ede8062c726b7cd43a49623bd3065c26, type: 3}
+  - {fileID: 5341752570212795460, guid: 01e1124eef2e34a40bcf5a0c0f667eda, type: 3}
+  - {fileID: 6840993628017174851, guid: ddb1a2d347fec684a8d13657d1423c56, type: 3}
+  - {fileID: 8535476703888575013, guid: b1aad6d3012412540929714c77e7ec68, type: 3}
   spawnX: 12
   minY: -2.5
   maxY: 2.5
@@ -723,7 +740,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000i
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -738,6 +755,9 @@ MonoBehaviour:
   m_ShadowSoftnessFalloffIntensity: 0.5
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
@@ -1296,63 +1316,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!1001 &1635654278
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3369336539998498967, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369336539998498967, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5658829
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369336539998498967, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369336539998498967, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369336539998498967, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369336539998498967, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369336539998498967, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369336539998498967, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369336539998498967, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3369336539998498967, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5796193675273752067, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
-      propertyPath: m_Name
-      value: Food_Geaw
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 26a25c5424522de46b38a00e33f84f8c, type: 3}
 --- !u!1 &1700306631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1815,7 +1778,6 @@ SceneRoots:
   - {fileID: 81516342}
   - {fileID: 986082782}
   - {fileID: 1509255348}
-  - {fileID: 1635654278}
   - {fileID: 338217094}
   - {fileID: 1197452689}
   - {fileID: 2073559444}
