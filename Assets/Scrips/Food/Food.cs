@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class Food : MonoBehaviour
@@ -25,6 +26,9 @@ public class Food : MonoBehaviour
     private float startX;
     private float startY;
 
+    // ตำแหน่ง X ที่ใช้เก็บการเคลื่อนที่จริง
+    private float currentX;
+
     private float timeAlive;
     private float floatOffset;
     private float swayOffset;
@@ -36,6 +40,9 @@ public class Food : MonoBehaviour
         // จำตำแหน่งตอน Spawn
         startX = transform.position.x;
         startY = transform.position.y;
+
+        // ตำแหน่ง X ปัจจุบัน
+        currentX = transform.position.x;
 
         // ทำให้อาหารแต่ละชิ้นลอยไม่พร้อมกัน
         floatOffset = Random.Range(0f, Mathf.PI * 2f);
@@ -57,11 +64,20 @@ public class Food : MonoBehaviour
 
     private void MoveAndFloat()
     {
-        // เคลื่อนที่จากขวาไปซ้าย
-        float x = startX - (moveSpeed * timeAlive);
+        // ความเร็วพื้นฐานของ Food
+        float currentSpeed = moveSpeed;
+
+        // รับโบนัสความเร็วจาก GameSpeedManager
+        if (GameSpeedManager.Instance != null)
+        {
+            currentSpeed = GameSpeedManager.Instance.GetSpeed(moveSpeed);
+        }
+
+        // เคลื่อนที่จากขวาไปซ้ายแบบต่อเนื่อง
+        currentX -= currentSpeed * Time.deltaTime;
 
         // ส่ายซ้ายขวาเล็กน้อย
-        x += Mathf.Sin(
+        float sway = Mathf.Sin(
             timeAlive * swaySpeed + swayOffset
         ) * swayAmount;
 
@@ -72,7 +88,7 @@ public class Food : MonoBehaviour
                   ) * floatHeight;
 
         transform.position = new Vector3(
-            x,
+            currentX + sway,
             y,
             transform.position.z
         );
@@ -125,3 +141,4 @@ public class Food : MonoBehaviour
         Destroy(gameObject);
     }
 }
+
